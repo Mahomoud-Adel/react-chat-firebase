@@ -1,0 +1,58 @@
+.login {
+  /* border: 1px solid; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 40px;
+  width: 100%;
+  transition: all 1s;
+
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    input {
+      border: none;
+      outline: none;
+      padding: 10px;
+      font-size: 16px;
+      background-color: rgba(17, 25, 40, 0.5);
+      color: #fff;
+    }
+
+    button {
+      padding: 10px;
+      font-size: 16px;
+      border: none;
+      background-color: #5183fe;
+      color: #fff;
+      cursor: pointer;
+      &:disabled{
+        cursor: not-allowed;
+        background-color: #5182fe98;
+      }
+    }
+
+    p {
+      font-size: 17px;
+
+      span {
+        cursor: pointer;
+        color: #5183fe;
+        text-decoration: underline;
+      }
+    }
+
+  
+  }
+  lable {
+    img{
+      width: 60px;
+      height: 60px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+  }
+}
